@@ -1,2 +1,2 @@
-# proa-proprofissao
-Contém todos os exercicios que eu realizei durante o curso proprofissão.
+# Exercícios realizados durante o Proprofissão ✨
+Os arquivos vão estar separados por pastas onde irá conter cada exercício proposto. ⭐

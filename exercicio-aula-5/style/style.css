@@ -2,18 +2,18 @@ main{
     position: relative;
     margin: auto;
     width: 90%;
-    height: 900px;
+    height: auto;
     background: #ccc;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
+    font-size: 40px;
     color: #fff;
     text-decoration: none;
     font-weight: normal;
-    text-align: center;
+    
 }
 
 #cabecalho_principal{
-     position: relative;
+    position: relative;
     width: 100%;
     height: 100px;
     background-color: #000;
@@ -23,47 +23,71 @@ main{
     justify-content: center;
 }
 #menu{
-     position: relative;
+    position: relative;
     width: 100%;
     height: 50px;
     background-color: rgb(4, 27, 179);
     display: flex;
     flex-direction: row;
-    align-items: end;
-    justify-content:left;
+    align-items: center;
+    justify-content:space-between;
+}
+#menu a{
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+    padding: 15px;
+    padding-bottom: 10px;
+    font-size: 25px;
 }
 #menu_lateral{
-     position: relative;
-    width: 15%;
-    height: 680px;
-    background-color: #5a5a5a;
+    position: relative;
+    width: 20%;
+    height: 700px;
     display: flex;
-    flex-direction: row;
-    align-items: first baseline;
-    justify-content:center;
+    flex-direction: column;
+    border-bottom: #fff solid 10px ;
+    align-items: end;
+    background-color: #c500f4;
+    justify-content:start;
     float: left;
+}
+#menu_lateral a{
+    width: 100%;
+    height: 100px;
+    padding-bottom: 10px;
+    padding-top: 19px;
+    text-decoration: none;
+    font-size: 20px;
+    border-bottom: #fff solid 1px;
+    margin: auto;
+    padding-left: 15px;
+    background-color: red;
+    color: #fff;
 }
 section {
     position: relative;
-    width: 70%;
-    height: 680px;
-    background-color: rgb(253, 178, 243);
+    width: 60%;
+    height: 700px;
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:center;
+    justify-content: start;
+    padding-top: 10px;
     float: left;
 }
-section h1{
-    font-size: 50px;
+#cabecalho_secundario p{
+    font-size: 40px;
+    color: #000;
 }
 #cabecalho_secundario{
     position: relative;
     width: 95%;
-    height: 50px;
-    margin: 5px 0;
+    height: 85px;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     background-color: #fff;
     color: #000;
@@ -72,7 +96,7 @@ section h1{
 #meio{
     position: relative;
     width: 95%;
-    height: 200px;
+    height: 250px;
     margin: 5px 0;
     display: flex;
     align-items: first baseline;
@@ -81,7 +105,7 @@ section h1{
     color: #fff;
     clear: left;
 }
-section p{ 
+#texto_meio{ 
     width: 95%;
     height: 150px;
     margin: 5px 0;
@@ -89,7 +113,7 @@ section p{
     align-items: first baseline;
     justify-content:left;
     font-size: 16px;
-    background-color: rgb(182, 196, 255);
+    background-color: rgb(173, 252, 239);
     color: #000;
     clear: left;
 }
@@ -104,17 +128,21 @@ section p{
 .quadrados_pequenos{
     position: relative;
     font-size: 16px;
-    width: 100%;
-    height: 180px;
+    width: 30%;
+    height: 170px;
     margin: 5px 10px ;
     background-color: rgb(53, 53, 53);
     color: #ffffff;
     float: right;
 }
+.imgs{
+    width: 100%;
+    height: 100%;
+}
 aside{
     position: relative;
-    width: 15%;
-    height: 680px;
+    width: 20%;
+    height: 710px;
     background-color: #c500f4;
     display: flex;
     align-items:first baseline;
@@ -132,9 +160,10 @@ footer{
     justify-content: center;
     clear: left;
 }
-#menu h1{
-    font-size: 50px;
+#menu_lateral a:hover{
+    background-color: #c500f4;
 }
-#menu_lateral h1{
-    font-size: 50px;
+#menu a:hover{
+    background-color: #fff;
+    color: rgb(4, 27, 179);
 }

@@ -1,0 +1,60 @@
+#fundo{
+    position: relative;
+    width: 80%;
+    height: 600px;
+    background-color: #0cF;
+    margin: auto;
+}
+h1{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #d90088;
+}
+#camada1{
+    position: relative;
+    width: 150px;
+    height: 180px;
+    background-color: #FFF5F2;
+    border: 5px solid #F5BABB;
+    text-align: center;
+    float:left; /*encaixar a esquerda*/
+}
+#camada2{
+    position: relative;
+    width: 150px;
+    height: 180px;
+    background-color: #f90066;
+    border: 5px solid #f0f;
+    text-align: center;
+    float: left;
+}
+#camada3{
+    position: relative;
+    width: 150px;
+    height: 180px;
+    background-color: #0055ff;
+    border: 5px solid #00f;
+    text-align: center;
+    clear: left; /*quebra a sequencia de floats então eles não encavalam não sobem um no outro*/
+    float: left;
+}
+#camada4{
+    position: relative;
+    width: 150px;
+    height: 180px;
+    background-color: #00ee99;
+    border: 5px solid #00ffff;
+    text-align: center;
+    float: left;
+}
+#absolute{
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    z-index: 3;
+    background-color: #0022ff;
+    width: 120px;
+    height: 90px;
+    text-align: center;
+    font-style: italic;
+}

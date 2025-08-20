@@ -1,0 +1,32 @@
+#fundo{
+    position: relative;
+    margin: auto;
+    background-color: #f00;
+    width: 80%;
+    height: 500px;
+    text-align: center;
+    font-size: 25px;
+}
+#camada1{
+    position: relative;
+    background-color: #00f;
+    height: 130px;
+    float: left;
+}
+#camada3{
+    position: relative;
+    background-color: #0f0;
+    height: 50px;
+    clear: left;
+}
+#camada4{
+    position: relative;
+    background-color: #ff0;
+    height: 600px;
+    border: 10px solid #f00;
+}
+#camada5{
+    position: relative;
+    background-color: #505050;
+    height: 50px;
+}

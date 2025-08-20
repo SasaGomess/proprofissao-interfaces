@@ -1,0 +1,140 @@
+main{
+    position: relative;
+    margin: auto;
+    width: 90%;
+    height: 900px;
+    background: #ccc;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: normal;
+    text-align: center;
+}
+
+#cabecalho_principal{
+     position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#menu{
+     position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(4, 27, 179);
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content:left;
+}
+#menu_lateral{
+     position: relative;
+    width: 15%;
+    height: 680px;
+    background-color: #5a5a5a;
+    display: flex;
+    flex-direction: row;
+    align-items: first baseline;
+    justify-content:center;
+    float: left;
+}
+section {
+    position: relative;
+    width: 70%;
+    height: 680px;
+    background-color: rgb(253, 178, 243);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    float: left;
+}
+section h1{
+    font-size: 50px;
+}
+#cabecalho_secundario{
+    position: relative;
+    width: 95%;
+    height: 50px;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: #000;
+    clear: left;
+}
+#meio{
+    position: relative;
+    width: 95%;
+    height: 200px;
+    margin: 5px 0;
+    display: flex;
+    align-items: first baseline;
+    justify-content: center;
+    background-color: #864c1d;
+    color: #fff;
+    clear: left;
+}
+section p{ 
+    width: 95%;
+    height: 150px;
+    margin: 5px 0;
+    display: flex;
+    align-items: first baseline;
+    justify-content:left;
+    font-size: 16px;
+    background-color: rgb(182, 196, 255);
+    color: #000;
+    clear: left;
+}
+#quadrados{
+    position: relative;
+    width: 97%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+}
+.quadrados_pequenos{
+    position: relative;
+    font-size: 16px;
+    width: 100%;
+    height: 180px;
+    margin: 5px 10px ;
+    background-color: rgb(53, 53, 53);
+    color: #ffffff;
+    float: right;
+}
+aside{
+    position: relative;
+    width: 15%;
+    height: 680px;
+    background-color: #c500f4;
+    display: flex;
+    align-items:first baseline;
+    justify-content: center;
+    float: left;
+}
+footer{
+    position: relative;
+    width: 100%;
+    height: 70px;
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    clear: left;
+}
+#menu h1{
+    font-size: 50px;
+}
+#menu_lateral h1{
+    font-size: 50px;
+}

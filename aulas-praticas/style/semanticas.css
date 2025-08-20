@@ -1,0 +1,141 @@
+/* css reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;	
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* css normal */
+main{
+    position: relative;
+    background-color: #f6f;
+    font-size: 16px;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    color: rgb(113, 25, 255);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+#cabecalho{
+    background-color: #ff0;
+    width: 100%;
+    height: 90px; 
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#cabecalho h1 {
+    padding: 5px;
+}
+.border {
+    border: 2px solid #3900a3;
+    border-radius: 15px;
+}
+nav{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(252, 40, 188);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+nav a{
+    position: relative;
+    width: 100px;
+    color: rgb(255, 255, 255);
+    text-decoration: none; /*retira o sublinhado*/
+    padding: 10px;
+    background-color: #3900a3;
+    transition: 0.5s all;
+}
+nav a:hover{
+    color: #3900a3;
+    background-color: rgb(255, 255, 255);
+    width: 120px;
+    transition: 0.5s all;
+}
+#lado-esquerdo{
+    position: relative;
+    width: 30%;
+    height: 450px;
+    background-color: #3900a3;
+    float: left;
+}
+#meio{
+    position: relative;
+    width: 70%;
+    height: 450px;
+    background-color: #fffdfc;
+    float: left;
+}
+#lado-esquerdo div{
+    position: relative;
+    width: 90%;
+    height: 180px;
+    margin:auto
+}
+#lado-esquerdo aside{
+    position: relative;
+    width: 90%;
+    height: 200px;
+    margin: auto;
+}
+aside img{
+    width: 100%;
+    height: 100%;
+}
+footer{
+    position: relative;
+    width: 100%;
+    display: flex;
+    background-color: #000;
+    height: 80px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    clear: left;
+}
+footer h3{
+    font-size: 26px;
+}

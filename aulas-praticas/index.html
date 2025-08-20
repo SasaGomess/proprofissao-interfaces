@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=01"> <!--- Ajuda ano design responsivo-->
+    <meta name="Description" content="Proa">
+    <meta name="Keywords" content="Utilizando palavras chave para mecanismos de busca">
+    <title>Primeira página html no proa</title>
+    <link rel="stylesheet" href="style.css"> 
+    <style type="text/css">
+        body{
+            font-size: 20px;
+            color: #012030; /*cor da fonte*/
+            font-family: Verdana, Geneva, Tahoma, sans-serif; /*tipo da fonte*/
+            background-color: burlywood;
+            background-image: url(imagens/study.gif);
+            background-repeat: no-repeat; /*para a repetição da imagem no fundo*/
+            /* background-position: center center; utilizamos o alinhamento de acordo com o plano cartesiano*/
+            background-position: 20% 30%; /*20% a esquerda e 30% ao topo*/
+            background-attachment: fixed; /*deixa a imagem de fundo não ficar fixo com o elementos */
+            background-size: cover; /*preenche o plano de fundo com a imagem*/
+        }
+
+        h1{
+            font-size: 18px;
+            color: rgb(41, 7, 121);
+            text-align: center;
+            font-family: tahoma;
+            background-color: azure;
+        }
+
+        h2{
+            font-size: 40px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #000;
+            background-color: antiquewhite;
+            width: 1000px;
+            text-align: center;
+            text-shadow: #012030;
+        }
+
+        h3{
+            background-color: darkcyan;
+            font-size: 1.2em;
+            width: 600px; /*atributo de largura*/
+            text-align: center; /*alinhado no de acordo com a largura*/
+            color: aqua;
+        }
+        .diferente{
+            background-color: aqua;
+            color: darkcyan;
+        }
+        .rosa{
+            background-color: #012030;
+            color: pink;
+        }
+        titulo-meio {
+            font-size: 30px;
+            color: rgb(253, 117, 181);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: rgb(76, 41, 87);
+            width: 2000px;
+            text-align: center;
+            text-shadow: #012030;
+        }
+        img.pequena{
+            width: 250px;
+            height: 230px;
+        }
+        img.media {
+            width: 350px;
+            height: 330px;
+        }
+        img.grande{
+            width: 450px;
+            height: 430px;
+            border: 3px dashed blue;
+        }
+
+        h4, h5, h6{
+            background-color: yellow;
+            font-size: 1em;
+            width: 600px;
+            color: #000;
+            font-style: italic;
+            text-align: center;
+        }
+        h4 {
+            background-color: aliceblue;
+            margin: auto; /*alinhamenti do componente*/
+            border: 5px solid red; /*Seguindo a ordem espeçura, estilo e cor*/
+        }
+        h5{
+            margin-left: 250px;
+           /* margin-bottom: 0;*/
+        }
+        h6{
+            margin: 0;
+        }
+        
+    </style>
+    </head>
+    <body>
+        <!--Se eu quiser que qualquer texto fique com uma tag voce clica
+        Crtl + Shift + P. procure a paralvra Wrap e depois coloque a tag de escolha.-->
+        <h1>O título mais lindo do mundo</h1>
+        <h2 class="rosa"> Sabrina é linda </h2>
+
+        <h3 class="pequena"> Utilizando uma tag bem bonita</h3>
+        <h3 class="diferente">Utilizando uma tag bem bonita</h3> <!-- classe para mudar elemento--> 
+        <h3> Utilizando uma tag bem bonita</h3>
+
+        <h4>Vamos lá criar uma frase</h4>
+        <h5>É difícil entender mas, o negócio é o seguinte</h5>
+        <h6>Estou testando os títulos</h6>
+        <h2 class="titulo-meio">Ola eu estou testando os títulos H2 da página com as minhas estilizações</h2>
+
+        <p>
+            <b>Negrito rapazeada</b><br />
+            <strong>Comme te pò capì chi te vò bene</strong><br> <!--TAG br usa para dar quebra de linha ao paragrafos -->
+            Si tu le parle miezzo americano? <br>
+            Quanno se fa l'ammore sotto 'a Luna <br>
+            Comme te vene 'ncapa 'e di': I love you? <br />
+
+            Pa, pa l'americano <br />
+            Pa, pa l'americano <br />
+            Pa— <br />
+            Pa, pa l'americano <br />
+
+            Pa l'americano <br /> <!-- Geralmente utilizamos / > para fechar tags vazias-->
+            Pa, pa l'americano <br />
+            (Pa) <br />
+
+            Pa, pa l'americano <br />
+            Pa, pa l'americano <br />
+
+            Whisky, e soda, e rocchenroll <br />
+            Whisky, e soda, e rocchenroll <br />
+            Whisky, e soda, e rocchenroll <br />
+        </p>
+        <ol type="A" start="1">
+            <li>Teste de itens na lista</li>
+        </ol>
+        <ul style="list-style-type:upper-latin">
+            <li>Outra lista bonita e cheirosa</li>
+        </ul>
+
+        <h3>Teste com imagens</h3>
+
+        <a href="pagina.html" target=""> 
+            <img class="media" src="imagens/baixados.jpg" alt="Imagem" title="Essa é uma página" >
+        </a>
+
+            <img class="pequena" src="imagens/baixados(2).gif" alt="Imagem 2" title="Essa imagem é a 2">
+            <img class="pequena" src="imagens/hellokitty.gif" alt="hellokitty" title="Hello Kitty">
+            <img class="grande" id="Sonic" src="imagens/sonic-devil.gif" alt="Sonic Doido" title="Sonic"> <br />
+
+            <a href="pagina.html" target="" rel="next"></a>
+
+            <a href="https://www.youtube.com">
+            <h1>Link para música</h1>
+        </a>
+    </body>
+</html>

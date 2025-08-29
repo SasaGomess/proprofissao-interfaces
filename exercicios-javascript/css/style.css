@@ -1,0 +1,44 @@
+body{
+    text-align: center;
+    background-color: #ffb2f2;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+img {
+    width: 150px;
+    height: 100px;
+    margin: 30px;
+}
+div {
+    position: absolute;
+    width: 500px;
+    height: 250px;
+    padding: 10px;
+    border: 5px double;
+    font-size: 14px;
+    text-align: justify;
+    top: 200px;
+    left: 680px;
+    visibility: hidden; /*Ocultando as divs*/
+}
+div img{
+    margin: 10px;
+    float: left;
+    width: 250px;
+    height: 200px;
+}
+#bmw36{
+    color: #fff;
+    border-color: #ffffff;
+    background-color: #1a1a1a;
+}
+#bmw32i{
+    color: #fff;
+    border-color: #05063a;
+    background-color: #000;
+}
+#lowriderr{
+    color: #fff;
+    border-color: #ffffff;
+    background-color: #440101;
+}

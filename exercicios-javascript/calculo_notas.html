@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando media das notas</title>
+    <link rel="stylesheet" href="css/notas.css" type="text/css" />
+</head>
+<body>
+    <img src="imagens/aprovado.png" id="aprovado">
+    <img src="imagens/desaprovado.png" id="desaprovado">
+    <p></p>
+
+    <script>
+        function mostrarSeAprovado() {
+            let imagemAprovado = document.getElementById('aprovado');
+            let imagemDesaprovado = document.getElementById('desaprovado');
+
+            imagemAprovado.style.visibility = 'visible';
+            imagemDesaprovado.style.visibility ='hidden';
+        }
+        function mostrarSeDesaprovado() {
+            let imagemDesaprovado = document.getElementById('desaprovado')
+            let imagemAprovado = document.getElementById('aprovado')
+
+            imagemDesaprovado.style.visibility = 'visible';
+            imagemAprovado.style.visibility = 'hidden';
+
+        }
+
+        let qtdNotas = parseFloat(prompt("Digite quantas notas você tirou no semestre"));
+
+        let soma = 0;
+
+        for (let index = 0; index < qtdNotas; index++) {
+            soma += parseFloat(prompt("Entre com o valor de sua nota"));
+        }
+
+        let media = soma / 4;
+
+        let texto = document.querySelector('p');
+
+        if(media >= 6.0){  
+            texto.innerHTML = `O aluno foi aprovado com a nota de ${media}`;
+            mostrarSeAprovado();
+        }else{
+            texto.innerHTML = `O aluno foi reprovado com a nota de ${media}`;
+            mostrarSeDesaprovado();
+        }
+
+    </script>
+</body>
+</html>

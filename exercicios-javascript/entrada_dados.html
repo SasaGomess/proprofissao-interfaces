@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando comandos de entrada no javascript</title>
+</head>
+<body>
+    <script>
+       let idade = parseInt(prompt("Digite sua idade")); /* Para fazer com que o prompt aceite so a parte numerica fazer o parseInt diretamente no prompt */
+       alert(`Sua idade é ${idade} anos`);
+
+       anoNascimento = 2025 - idade;
+
+       let nome = prompt("Entre com o seu nome: ");
+
+       let altura = parseFloat(prompt("Entre com a sua altura"))
+       document.write("Seu nome é " + nome + " com a altura de "+ altura.toFixed(2) +" cm. Você nasceu em " + anoNascimento + " <3");
+
+       
+    </script>
+</body>
+</html>

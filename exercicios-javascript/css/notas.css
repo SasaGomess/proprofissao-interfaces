@@ -1,0 +1,10 @@
+img{
+    height: 120px;
+    width: 5%;
+    
+}
+#aprovado, #desaprovado{
+    visibility: hidden;
+    
+}
+

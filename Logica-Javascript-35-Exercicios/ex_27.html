@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crie um programa que leia a idade de uma pessoa e seu sexo (M ou F) e exiba uma mensagem indicando se ela pode ou não se aposentar. Homens podem se aposentar com 65 anos ou mais, e mulheres com 60 anos ou mais.</title>
+</head>
+<body>
+    <script>
+        let idade = parseInt(prompt("Digite a sua idade"));
+        let sexo = prompt("Digite seu sexo F ou M");
+
+        if(idade >= 65 && sexo == 'M'){
+            document.write("Esse homem pode se aposentar");
+        }else if(idade < 65 && sexo == 'M'){
+            document.write("Esse homem não pode se aposentar ainda");
+        } else if (idade >= 60 && sexo == 'F'){
+            document.write("Essa mulher pode se aposentar");
+        } else if(idade < 60 && sexo == 'F'){
+            document.write("Essa mulher não pode se aposentar ainda");
+        } else{
+             document.write("Sexo ou Idade inválidos, reinicie a aplicação e tente novamente");
+        }
+    </script>
+</body>
+</html>

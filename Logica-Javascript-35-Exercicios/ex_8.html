@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escreva um programa que leia dois números inteiros e troque os seus valores, ou seja, o primeiro deve ficar com o valor do segundo e vice-versa.</title>
+</head>
+<body>
+    <script>
+        let n1 = parseFloat(prompt("Digite o 1° n"));
+        let n2 = parseFloat(prompt("Digite o 2° n"));
+
+        let troca = n1;
+        n1 = n2;
+        n2 = troca;
+        document.write(`A troca foi: 1°N --> ${n1}` + "<br>");
+        document.write(`A troca foi: 2°N --> ${n2}`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça um programa que receba um valor de uma compra e mostre o valor das prestações.</title>
+</head>
+<body>
+    <script>
+        let valorProdutoMamaoComAcucar = parseFloat(prompt("Digite o valor do produto da loja Mamão com Açúcar"));
+        let valorPrestação = 0;
+       
+        valorPrestação = valorProdutoMamaoComAcucar / 5;
+        document.writeln(`O valor das prestações sem juros foram de R$${valorPrestação.toFixed(2)}`);
+    </script>
+</body>
+</html>

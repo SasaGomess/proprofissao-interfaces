@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça um programa que leia 20 números e, ao final, escreva quantos estão entre 0 e 100, quantos estão entre 101 e 200 e quantos são maiores de 200.</title>
+</head>
+<body>
+    <script>
+        let n;
+        let qtdEntre0e100 = 0;
+        let qtdEntre101e200 = 0;
+        let qtdMaior200 = 0;
+
+        for (let index = 0; index < array.length; index++) {
+            n = parseInt(prompt(`Digite o ${index + 1}° número`));
+            if(n >= 0 && n <= 100){
+                qtdEntre0e100++;
+            }else if(n >= 101 && n <= 200){
+                qtdEntre101e200++
+            }else if(n > 200){
+                qtdMaior200++;
+            }
+        }
+        document.writeln(`A quantidade de números entre 0 e 100 foi ${qtdEntre0e100}. A qtd de números entre 101 e 200 foi: ${qtdEntre101e200}. A qtd de números maiores que 200 foi ${qtdMaior200}`);
+    </script>
+</body>
+</html>

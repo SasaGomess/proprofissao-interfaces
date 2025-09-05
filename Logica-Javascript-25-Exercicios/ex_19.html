@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elaborar um programa que efetue a apresentação do valor da conversão em real (R$) de um valor lido em dólar (US$). </title>
+</head>
+<body>
+    <h1>Converssor de moedas (U$ para R$)</h1>
+    <script>
+        let valorDolar = parseFloat(prompt("Digite o valor em real"));
+        let cotacaoDolar = parseFloat(prompt("Digite a cotacao do dolar no momento"));
+
+        let valorEmReal = valorDolar * cotacaoDolar;
+
+        document.writeln(`Valor da conversão ${valorEmReal}`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escreva um programa que leia o código de um produto e a quantidade comprada, e exiba o valor total a ser pago. Considere que cada produto tem um preço diferente</title>
+</head>
+<body>
+    <script>
+        let codPassado = parseInt(prompt("Digite o cod do produto"));
+        let qtd = parseInt(prompt("Digite a quantidade"));
+
+        let precoProduto = 0;
+
+        switch(codPassado){
+            case 1:
+                precoProduto = 200;
+                break;
+            case 2:
+                precoProduto = 100;
+                break;
+            case 3:
+                precoProduto = 150;
+                break;
+            case 4:
+                precoProduto = 190;
+                break;
+            case 5:
+                precoProduto = 330;
+                break;
+            case 6:
+                precoProduto = 250;
+                break;
+            default:
+                alert("O valor do código é maior que 6 ou menor que 1");
+                break;
+        }
+
+        let precoTotal = precoProduto * qtd;
+
+        document.write(`O preço total a ser pago é R$${precoTotal}`);
+    </script>
+</body>
+</html>

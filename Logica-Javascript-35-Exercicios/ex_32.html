@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escreva um programa que leia a nota de um aluno em uma prova e exiba a sua conceituação conforme a tabela de notas</title>
+</head>
+<body>
+    <script>
+        
+        let notaAluno = parseFloat(prompt("Digite sua nota"));
+        let conceituacao;
+        
+        if(notaAluno < 5 ){
+            conceituacao = 'F';
+        }else if(notaAluno < 6){
+            conceituacao = "D";
+        } else if(notaAluno < 7.5){
+            conceituacao = "C";
+        } else if(notaAluno < 9.0){
+            conceituacao = "B";
+        } else if(notaAluno >= 9.0){
+            conceituacao = "A";
+        }
+
+        document.write(`O valor de sua nota foi ${conceituacao}`);
+
+    </script>
+</body>
+</html>

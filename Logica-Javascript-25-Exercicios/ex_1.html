@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar um programa em Javascript, que informe a quantidade total de calorias de uma refeição a partir do
+        usuário que deverá informar o prato, a sobremesa e a bebida</title>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Prato</th>
+                <th>Calorias</th>
+                <th>Sobremesa</th>
+                <th>Calorias</th>
+                <th>Bebida</th>
+                <th>Calorias</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+                <tr>
+                    <td> 1 - Vegetariano</td>
+                    <td> 180 cal</td>
+                    <td> 1 - Abacaxi </td>
+                    <td> 75 cal</td>
+                    <td> 1 - Chá </td>
+                    <td> 20 cal</td>
+                <tr>
+                </tr>
+                <tr>
+                    <td> 2 - Peixe</td>
+                    <td> 230 cal</td>
+                    <td> 2 - Sorvete diet</td>
+                    <td> 110 cal</td>
+                    <td> 2 - Suco de laranja </td>
+                    <td> 60 cal</td>
+                </tr>
+                <tr>
+                    <td> 3 - Frango</td>
+                    <td> 250 cal</td>
+                    <td> 3 - Mouse diet </td>
+                    <td> 170 cal</td>
+                    <td> 3 - Suco de melão </td>
+                    <td> 70 cal</td>
+                </tr>
+                <tr>
+                    <td> 4 - Carne</td>
+                    <td> 350 cal</td>
+                    <td> 4 - Mouse chocolate </td>
+                    <td> 200 cal</td>
+                    <td> 4 - Refrigerante diet </td>
+                    <td> 120 cal</td>
+                </tr>
+            
+        </tbody>
+    </table>
+
+    <script>
+        //  let prato = parseInt(prompt("Escolha um prato de 1 a 4"));
+        // let sobremesa = parseInt(prompt("Escolha uma sobremesa de 1 a 4"));
+        // let bebida = parseInt(prompt("Escolha uma bebida de 1 a 4"));
+
+        let calorias = 0;
+
+        switch (prato) {
+            case 1:
+                calorias += 180;
+                break;
+            case 2:
+                calorias += 230;
+                break;
+            case 3:
+                calorias += 250;
+                break;
+            case 4:
+                calorias += 350;
+                break;
+            default:
+                break;
+        }
+
+        switch (sobremesa) {
+            case 1:
+                calorias += 75;
+                break;
+            case 2:
+                calorias += 110;
+                break;
+            case 3:
+                calorias += 170;
+                break;
+            case 4:
+                calorias += 200;
+                break;
+            default:
+                break;
+        }
+
+        switch (bebida) {
+            case 1:
+                calorias += 20;
+                break;
+            case 2:
+                calorias += 70;
+                break;
+            case 3:
+                calorias += 100;
+                break;
+            case 4:
+                calorias += 65;
+                break
+            default:
+                break;
+        }
+
+        document.writeln(`O total de calorias consumidas com a refeição escolhida foi: ${calorias} CAL`)
+    </script>
+</body>
+
+</html>

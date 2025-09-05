@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça um programa que receba três notas de um aluno e exiba se ele foi aprovado ou reprovado. A média para aprovação é 7.</title>
+</head>
+<body>
+    <script>
+        let soma = 0;
+        for (let index = 0; index < 3; index++) {
+            soma += parseFloat(prompt(`Digite a ${index+1}° numero`));
+        }
+        let media = soma / 3;
+
+        if(media >= 7){
+            document.write("Aprovado");
+        }else {
+            document.write("Desaprovado");
+        }
+    </script>
+</body>
+</html>

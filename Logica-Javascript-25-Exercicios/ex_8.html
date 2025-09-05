@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O programa deve calcular o valor total a ser pago e apresentar o resultado. </title>
+</head>
+<body>
+    <script>
+        let ipi = parseInt(prompt("Informe a porcentagem de IPI"));
+        let calculoQuantidadeValor;
+        for (let index = 0; index < 2; index++) {
+            let codProduto = parseInt(prompt(`Informe o cod do ${index + 1}° produto `));
+            let unididade = parseInt(prompt(`Informe o valor unitario da peça ${index + 1}`));
+            let qtd = parseInt(prompt("Informe a porcentagem de IPI"));
+            
+            calculoQuantidadeValor += unididade * qtd;
+        }
+        let calculoTotal = calculoQuantidadeValor * (ipi/100 + 1);
+
+        document.writeln(calculoTotal);
+    </script>
+</body>
+</html>

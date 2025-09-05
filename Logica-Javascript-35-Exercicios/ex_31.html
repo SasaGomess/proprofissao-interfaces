@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça um programa que leia o valor do salário-mínimo e o salário de um funcionário, e exiba quantos salários-mínimos ele recebe</title>
+</head>
+<body>
+    <script>
+        const salarioMin = 1.518;
+        let salarioFunc = parseFloat(prompt("Digite o valor do seu salário para o calculo"));
+
+        let qtdSalariosMinimos = parseInt(salarioFunc / salarioMin);
+
+        document.write(`A quantidade de salários minímos do salário de R$${salarioFunc} é de ${qtdSalariosMinimos} salários mínimos`);
+    </script>
+</body>
+</html>

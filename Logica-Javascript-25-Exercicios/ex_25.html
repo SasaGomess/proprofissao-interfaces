@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escreva um programa que leia uma sequência de números do usuário e realize e a soma desses números. Encerre a execução quando um número negativo for digitado.</title>
+</head>
+<body>
+    <h1></h1>
+    <script>
+        let soma = 0;
+        let n = parseFloat(prompt("Digite um numero"));
+
+        while(n >= 0){
+            soma += n; 
+            n = parseFloat(prompt("Digite um numero"));
+        }
+        document.querySelector('h1').innerHTML = `A soma dos números foi ${soma} e o último numero digitado foi: ${numero}`
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crie um programa que leia a idade de um grupo de pessoas e exiba quantas são menores de idade e quantas são maiores de idade.</title>
+</head>
+<body>
+    <script>
+        let nomesMaior = [];
+        let nomesMenor = [];
+        let qtdMenor = 0;
+        let qtdMaior = 0;
+        let numero = parseFloat(prompt("Digite a quantidade de pessoas"));
+
+
+        for (let index = 0; index < numero; index++) {
+            let nome = prompt("Digite o seu nome");
+            let idade = parseInt(prompt("Digite sua idade"));
+
+            if(idade >= 18){
+                nomesMaior.push(nome); 
+                qtdMaior++;
+            }else{
+                nomesMenor.push(nome);
+                qtdMenor++;
+            }
+        }
+
+        document.write(`Quantidades de pessoas menores de idade: ${qtdMenor} & quantidade de pessoas maiores de idade: ${qtdMaior}` + "<br>");
+        document.write("Nomes de pessoas menores de idade:" + "<br>");
+
+        nomesMenor.forEach(pessoa => {
+            document.write(pessoa + "<br>");
+        });
+         
+        document.write("Nomes de pessoas maiores de idade:" + "<br>");
+
+        nomesMaior.forEach(pessoa => {
+            document.write(pessoa + "<br>");
+        });
+
+    </script>
+</body>
+</html>

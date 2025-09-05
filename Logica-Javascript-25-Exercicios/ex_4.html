@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados três valores A, B e C, construa um programa em Javascript, que mostre na tela os valores de forma descendente (do maior para o menor).</title>
+</head>
+<body>
+    <script>
+        let A = parseInt(prompt("Digite o 1° numero"));
+        let B = parseInt(prompt("Digite o 2° numero"));
+        let C = parseInt(prompt("Digite o 3° numero"));
+
+        if(A > B && B > C){
+            document.writeln(A + "<b>");
+            document.writeln(B + "<b>");
+            document.writeln(C + "<b>");
+        }else if(B > A && A > C){
+            document.writeln(B + "<b>");
+            document.writeln(A + "<b>");
+            document.writeln(C + "<b>");
+        } else if(C > A && B > C){
+            document.writeln(B + "<b>");
+            document.writeln(C + "<b>");
+            document.writeln(A + "<b>");
+        } else if(C > B && B > A){
+            document.writeln(C + "<b>");
+            document.writeln(B + "<b>");
+            document.writeln(A + "<b>");
+        } else if(C > A && A > B){
+            document.writeln(C + "<b>");
+            document.writeln(A + "<b>");
+            document.writeln(B + "<b>");
+        } else if(A > C && C > B){
+            document.writeln(A + "<b>");
+            document.writeln(C + "<b>");
+            document.writeln(B + "<b>");
+        }
+    </script>
+</body>
+</html>

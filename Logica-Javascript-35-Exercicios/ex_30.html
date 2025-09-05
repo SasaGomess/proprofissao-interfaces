@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crie um programa que leia o número de maçãs compradas e exiba o valor total a ser pago. O preço das maçãs é de R$ 0,50 cada se a quantidade for menor que 12 e R$ 0,40 cada se a quantidade for igual ou maior que 12.</title>
+</head>
+<body>
+    <script>
+
+        let qtdMacas = parseInt(prompt("Digite a quantidade de maçãs"));
+        let valorTotal = 0;
+
+        if(qtdMacas < 12){
+            let precoUnidade = 0.50;
+            valorTotal = precoUnidade * qtdMacas;
+        }else{
+            let precoUnidade = 0.40;
+            valorTotal = precoUnidade * qtdMacas;
+        }
+
+        document.write(`O valor total a ser pago é R$ ${valorTotal}`);
+        
+    </script>
+</body>
+</html>

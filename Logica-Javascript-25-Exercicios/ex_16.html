@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escreva um programa que leia a idade de 20 pessoas e exiba a média das idades. </title>
+</head>
+<body>
+    <script>
+        let somaIdades;
+
+        for (let index = 0; index < 20; index++) {
+           somaIdades += parseInt(prompt(`Digite a ${index + 1}° idade`));
+        }
+        
+        let mediaIdades = somaIdades / 20;
+
+        document.writeln(mediaIdades);
+    </script>
+</body>
+</html>

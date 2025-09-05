@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escreva um programa que calcule a média aritmética entre três números reais inseridos pelo usuário.</title>
+</head>
+<body>
+    <script>
+        let soma = 0;
+        for (let index = 0; index < 3; index++) {
+            soma += parseFloat(prompt("Digite o numero"));
+        }
+        let media = soma / 3;
+
+        document.write(`A media é ${media.toFixed(2)}`);
+
+    </script>
+    
+</body>
+</html>

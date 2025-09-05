@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça um programa que leia um número inteiro e exiba a sua tabuada de multiplicação até o décimo valor.</title>
+</head>
+<body>
+    <script>
+        let n = parseFloat(prompt("Digite o numero da tabuada: "));
+
+        for (let index = 0; index <= 10; index++) {
+            let resultado = n * index;
+            document.write(`${n} X ${index} = ${resultado}` + "<br>");
+        }
+    </script>
+</body>
+</html>

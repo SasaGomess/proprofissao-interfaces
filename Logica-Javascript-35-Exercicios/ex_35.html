@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escreva um programa que leia três números inteiros e exiba a média aritmética. Se a média for maior ou igual a 7, exiba a mensagem "Aprovado", caso contrário, exiba a mensagem "Reprovado".</title>
+</head>
+<body>
+    <script>
+        let soma = 0;
+        for (let index = 0; index < 3; index++) {
+            soma += parseInt(prompt(`Digite o ${index + 1}° número`));
+        }
+        let mediaAritimetica = soma / 3;
+
+        if(mediaAritimetica >= 7){
+            document.write("APROVADO");
+        }else{
+            document.write("DESAPROVADO");
+        }
+    </script>
+</body>
+</html>

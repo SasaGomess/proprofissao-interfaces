@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vogais e Consoantes</title>
+</head>
+<body>
+    <script>
+        let letra = (prompt("Digite uma letra")).toLocaleLowerCase();
+
+        if(!letra.match('/[a-zA-Z]/')){
+            throw new Error("O caractere é inválido, precisa ser uma letra");
+        }
+
+        switch(letra){
+            case 'a':
+            case 'e':
+            case 'i':
+            case 'o':
+            case 'u':
+                alert("É uma vogal");
+                break;
+            default:
+                alert("É uma consoante");
+                break;
+        }
+    </script>
+</body>
+</html>

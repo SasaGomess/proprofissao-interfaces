@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semaforo</title>
+</head>
+<body>
+    <script>
+        let semaforo = (prompt("Digite a cor do semaforo")).toLocaleLowerCase();
+
+        switch(semaforo){
+            case "verde":
+                alert("Pode prosseguir");
+                break;
+            case "vermelho":
+                alert("PARE!!!");
+                break;
+            case "amarelo":
+                alert("Cuidado");
+                break;
+            default:
+                alert("A cor digitada é inválida");
+                break;
+        }
+    </script>
+</body>
+</html>

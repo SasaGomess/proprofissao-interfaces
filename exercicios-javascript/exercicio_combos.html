@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/combos.css" type="text/css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <h1>Digite o combo desejado 🍔🍟🥤</h1>
+        <div class="dados_container">
+            <input type="text" id="combo" name="input-name" placeholder="Digite um combo">
+            <button class="button-achar" onclick="acharCombo()">Achar Combo</button>
+        </div>
+
+
+        <div class="imagem_container">
+            <img src="imagens/whopper-furioso.png" id="whopper-furioso" alt="">
+            <img src="imagens/big-king.png" id="big-king" alt="">
+            <img src="imagens/mega-stacker.png" id="mega-stacker" alt="">
+            <img src="imagens/stacker-duplo.png" id="stacker-duplo" alt="">
+            <img src="imagens/cheeseburguer.png" id="cheeseburguer" alt="">
+        </div>
+
+        <h4></h4>
+    </main>
+
+
+    <script>
+        let hamburguer;
+        let bebida;
+        let acompanhamento;
+        let sobremesa;
+        let molhos;
+        let preco = 0;
+        let imagemSelecionada;
+        let imagemAntiga;
+
+        function acharCombo() {
+
+            esconderCombos();
+
+            let combo = parseInt(document.getElementById('combo').value);
+            let comboEscolhido = document.querySelector('h4');
+
+            switch (combo) {
+                case 1:
+                    hamburguer = "WHOPPER Furioso";
+                    bebida = "Refrigerante";
+                    acompanhamento = "Batata Frita";
+                    sobremesa = "Milk Shake";
+                    molhos = "Jalapenõ e Chipatle";
+                    preco = 36.90;
+
+                    mostrarWhopper();
+
+                    comboEscolhido.innerHTML = `O combo é : ${hamburguer} + ${bebida} + ${acompanhamento} + ${sobremesa} + ${molhos} Total: R$${preco.toFixed(2)}`;
+                    break;
+                case 2:
+                    hamburguer = "Big King";
+                    bebida = "Refrigerante";
+                    acompanhamento = "Batata Frita";
+                    preco = 25.90;
+
+                    mostrarBigKing();
+
+                    comboEscolhido.innerHTML = `O combo é : ${hamburguer} + ${bebida} + ${acompanhamento} Total: R$${preco.toFixed(2)}`;
+                    break;
+                case 3:
+                    hamburguer = "Stacker Duplo";
+                    bebida = "Suco";
+                    acompanhamento = "Batata Frita";
+                    sobremesa = "Casquinha";
+                    preco = 27.90;
+
+                    let megaStacker;
+
+                    if (imagemAntiga != imagemSelecionada) {
+                        esconderCombo(imagemAntiga);
+                    }
+
+                    mostrarStackerDuplo();
+
+                    comboEscolhido.innerHTML = `O combo é : ${hamburguer} + ${bebida} + ${acompanhamento} +  ${sobremesa} Total: R$${preco.toFixed(2)}`;
+                    break;
+                case 4:
+                    hamburguer = "Mega Stacker";
+                    bebida = "Refrigerante";
+                    acompanhamento = "BK Chickens";
+                    preco = 63.90;
+
+                    let stackerDuplo = document.getElementById('stacker-duplo');
+
+                    mostrarMegaStacker();
+
+                    comboEscolhido.innerHTML = `O combo é : ${hamburguer} + ${bebida} + ${acompanhamento} Total: R$${preco.toFixed(2)}`;
+                    break;
+                case 5:
+                    hamburguer = "Cheese Burguer";
+                    bebida = "Refrigerante";
+                    acompanhamento = "Batata Frita";
+                    sobremesa = "BK MIX de Brownie";
+                    molhos = "Barbecue";
+                    preco = 43.00;
+
+                    
+                    mostrarCheesburguer();
+
+                    comboEscolhido.innerHTML = `O combo é : ${hamburguer} + ${bebida} + ${molhos} + ${acompanhamento} + ${sobremesa} Total: R$${preco.toFixed(2)}`;
+                    break;
+            }
+            imagemAntiga = imagemSelecionada;
+        }
+
+        function mostrarWhopper() {
+            let whopper = document.getElementById('whopper-furioso');
+            whopper.style.display="inline";
+        }
+        function mostrarBigKing() {
+            let bigKing = document.getElementById('big-king');
+            bigKing.style.display="inline";
+        }
+        function mostrarStackerDuplo() {
+            let stackerDuplo = document.getElementById('stacker-duplo');
+            stackerDuplo.style.display="inline";
+        }
+        function mostrarMegaStacker() {
+            let megaStacker = document.getElementById('mega-stacker');
+            megaStacker.style.display="inline";
+        }
+        function mostrarCheesburguer() {
+            let cheeseburguer = document.getElementById('cheeseburguer');
+            cheeseburguer.style.display="inline";
+        }
+
+        function esconderCombos() {
+            let whopper = document.getElementById('whopper-furioso');
+            let bigKing = document.getElementById('big-king');
+            let stackerDuplo = document.getElementById('stacker-duplo');
+            let megaStacker = document.getElementById('mega-stacker');
+            let cheeseburguer = document.getElementById('cheeseburguer');
+            
+            whopper.style.display="none";
+            bigKing.style.display="none";
+            stackerDuplo.style.display="none";
+            megaStacker.style.display="none";
+            cheeseburguer.style.display="none";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escreva um algoritmo que leia 20 números do usuário e exiba quantos números são 
+pares</title>
+</head>
+
+<body>
+    <script>
+        let qtdPares = 0;
+
+        for (let index = 1; index <= 20; index++) {
+            let n = parseInt(prompt(`Digite o ${index}° número`));
+
+            if (n % 2 == 0) {
+                qtdPares++;
+            }
+        }
+        document.writeln(`Os n° pares são ${qtdPares}`);
+    </script>
+</body>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escreva um algoritmo que leia uma sequência de números do usuário e realize a 
+soma desses números. Encerre a execução quando um número negativo for digitado.</title>
+</head>
+
+<body>
+    <script>
+        let n = parseInt(prompt(`Digite um número`));
+        let soma = 0;
+
+        while (n >= 0) {
+            soma += n;
+            n = parseInt(prompt(`Digite um número`));
+        }
+        document.writeln(`A soma dos numeros positivos foi ${soma}`);
+    </script>
+</body>

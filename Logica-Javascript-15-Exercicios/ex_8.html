@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leia a idade de 20 pessoas e exiba quantas pessoas são maiores de idade.</title>
+</head>
+<body>
+    <script>
+        let menorIdade = 0; 
+
+        for (let index = 1; index <= 20; index++) {
+            let i = parseInt(prompt("Digite a sua idade"));
+
+            if(i < 18){
+                menorIdade++;
+            }
+        }
+        document.writeln(`A quantidade de menores de idade é ${menorIdade}`);
+    </script>
+</body>

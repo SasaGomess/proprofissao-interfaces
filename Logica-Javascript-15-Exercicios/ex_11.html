@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escreva um algoritmo que leia 20 números do usuário e exiba quantos números são 
+maiores do que 8.</title>
+</head>
+
+<body>
+    <script>
+        let nMaiorQue18 = 0;
+
+        for (let index = 1; index <= 20; index++) {
+            let n = parseInt(prompt(`Digite o ${index}° número`));
+
+            if (n > 8) {
+                nMaiorQue18++;
+            }
+        }
+        document.writeln(`Os n° maior que 8 q são ${nMaiorQue18}`);
+    </script>
+</body>

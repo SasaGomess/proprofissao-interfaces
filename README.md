@@ -7,3 +7,5 @@ Os arquivos vão estar separados por pastas onde irá conter cada exercício pro
 - **CSS** 💙
 - **HTML** 💙
 
+### Aprendendo 🌟
+- **React**

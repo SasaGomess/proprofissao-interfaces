@@ -1,0 +1,19 @@
+ /* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}  */
+
+.principal {
+  position: relative;
+  width: 85%;
+  background-color: #0192cc;
+  margin: auto;
+  height: 800px;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 22px;
+  display: flex;
+  flex-direction: column;
+}

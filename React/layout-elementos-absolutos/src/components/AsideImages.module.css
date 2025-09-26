@@ -1,0 +1,14 @@
+.aside_images{
+    width: 15%;
+    height: auto;
+    background-color: #9fc0db;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.container{
+    width: 90%;
+    height: 100px;
+    background-color: #fff;
+}

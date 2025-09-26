@@ -1,0 +1,14 @@
+.principal{
+  position: relative;
+  background-color: aquamarine;
+  width: 99%;
+  height: 98vh;
+  margin: auto;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+p{
+  font-size: 18px;
+  color: #000;
+}

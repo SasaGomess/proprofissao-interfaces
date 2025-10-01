@@ -1,0 +1,14 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+main{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  color: #021f5e;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+

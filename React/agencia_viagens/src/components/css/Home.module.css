@@ -1,0 +1,27 @@
+.home_fundo{
+    position: relative;
+   
+    height: 670px;
+    display: flex;
+    align-items: center;
+}
+.home_mala{
+    width: 45%;
+    height: 550px;
+}
+.home_conteudo{
+    text-align: center;
+    width: 50%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.home_conteudo h1{
+    font-size: 45px;
+}
+.home_conteudo p{
+    font-size: 18px;
+}

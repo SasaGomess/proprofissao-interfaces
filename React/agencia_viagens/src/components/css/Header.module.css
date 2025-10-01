@@ -1,0 +1,35 @@
+.cabecalho{
+    position: relative;
+    width: 100%;
+    height: 120px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.cabecalho_logo{
+    width: 100px;
+    height: 100px;
+}
+.cabecalho_conteudo{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+.cabecalho_conteudo a {
+    text-decoration: none;
+    color: #021f5e;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+.busca{
+    padding: 10px;
+    border: 2px solid #021f5e;
+    border-radius: 25px;
+    font-size: 16px;
+}
+
+.pesquisar{
+    width: 32px;
+    height: 32px;
+}

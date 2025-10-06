@@ -1,0 +1,10 @@
+.fundo_vermelho{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background-color: rgb(216, 48, 48);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+main {
+  position: relative;
+  margin: auto;
+  width: 90%;
+  height: auto;
+  background-color: #ff7e70;
+}
+p{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+}

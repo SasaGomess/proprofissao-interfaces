@@ -1,0 +1,9 @@
+.fundo_laranja{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background-color: rgb(201, 65, 11);
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
+}

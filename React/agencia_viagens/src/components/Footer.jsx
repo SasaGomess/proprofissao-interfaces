@@ -1,22 +1,21 @@
-import styles from './css/Footer.module.css'
-import Facebook from '../assets/imagens/face.jfif'
-import Instagram from '../assets/imagens/insta.jfif'
-import TikTok from '../assets/imagens/tiktok.jpg'
-import WhatsApp from '../assets/imagens/whats.jpg'
+import Styles from './css/Footer.module.css'
+import Facebook from '../assets/imagens/facebook.png'
+import Instagram from '../assets/imagens/instagram.png'
+import TikTok from '../assets/imagens/tiktok.png'
+import WhatsApp from '../assets/imagens/whats.png'
 
-function Footer() {
+export default function Footer() {
     return(
-        <footer className={styles.rodape_fundo}>
+        <footer className={Styles.rodape_fundo}>
             <p>Nos siga nas nossas Redes Sociais</p>
-            <div className={styles.rodape_logos}>
-                <img src={Facebook} alt="Facebook" className={styles.logos} />
-                <img src={Instagram} alt="Instagram" className={styles.logos}  />
-                <img src={TikTok} alt="TikTok" className={styles.logos}  />
-                <img src={WhatsApp} alt="WhatsApp" className={styles.logos}  />
+            <div className={Styles.rodape_logos}>
+                <img src={Facebook} alt="Facebook" className={Styles.logos} />
+                <img src={Instagram} alt="Instagram" className={Styles.logos}  />
+                <img src={TikTok} alt="TikTok" className={Styles.logos}  />
+                <img src={WhatsApp} alt="WhatsApp" className={Styles.logos}  />
             </div>
             <p>@Copyright</p>
         </footer>
     )
 }
 
-export default Footer

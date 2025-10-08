@@ -1,12 +1,15 @@
 .home_fundo{
     position: relative;
-   
     height: 670px;
     display: flex;
     align-items: center;
+    gap: 2%;
 }
 .home_mala{
-    width: 45%;
+    width: 50%;
+    background-image: url("../../assets/imagens/mala.png");
+    background-size: contain;
+    background-repeat: no-repeat;
     height: 550px;
 }
 .home_conteudo{

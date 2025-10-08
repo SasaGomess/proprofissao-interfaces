@@ -6,7 +6,7 @@ import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
 
 
-function Header() {
+export default function Header() {
     return(
         <header className={Styles.cabecalho}>
             <img src={ViagensLogo} alt="Logo da Travel" className={Styles.cabecalho_logo}/>
@@ -27,4 +27,3 @@ function Header() {
 
     )
 }
-export default Header

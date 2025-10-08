@@ -1,0 +1,24 @@
+.fundo_amarelo{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    margin-bottom: 10px;
+    background-color: #ff0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container_azul{
+    position: relative;
+    background-color: #072894;
+    width: 45%;
+    height: 190px;
+    padding: 10px;
+}
+.container_verde{
+    position: relative;
+    background-color: #08a396;
+    width: 45%;
+    height: 190px;
+    padding: 10px;
+}

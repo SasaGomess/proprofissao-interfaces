@@ -1,15 +1,18 @@
 body{
     position: relative;
-    color: #fff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
     
 }
 main{
     width: 90%;
     height: auto;
     margin: auto;
-    /*background-color: lime;*/
+}
+h1, h3{
+    height: 35px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
 }
 .cabecalho{
     width: 100%;
@@ -19,31 +22,16 @@ main{
     justify-content: center;
     align-items: center;
 }
-.cabecalho h1{
-    font-weight: 500;
-}
+
 #menu_superior{
     width: 100%;
     height: 40px;
     background-color: #009;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: left;
+    align-items: end;
 }
-#menu_superior a{
-    color: #fff;
-    text-decoration: none;
-    width: 16.67%;
-    text-align: center;
-    padding: 10px;
-    box-sizing: border-box; /*conteudo se encaixa no espaço existente (se eu aumentar o padding, borda ou margem ele se alinha no espaço que ele tem para preencher)*/
-}
-#menu_superior a:hover{
-    color: #009;
-    transition: all 0.5s;
-    background-color: #fff;
-}
+
 .container_principal{
     display: flex;
 }
@@ -51,58 +39,43 @@ main{
     width: 25%;
     height: 480px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-#menu_lateral a{
-    color: #e2e2e2;
-    background-color: #777;
-    width: 100%;
-    height: auto;
-    padding: 10px;
-    box-sizing: border-box;
-    text-decoration: none;
-    border-bottom: 1px solid #fff;
-    text-align: left;
-}
-#menu_lateral a:hover{
-    background-color: #313131;
+    background-color: #c2c2c2;
+    justify-content: center;
 }
 #meio{
     width: 48%;
     height: 480px;
     padding-left: 1%;
     padding-right: 1%;
+    background-color: #ffbafc;
 }
 .meio_cabecalho_titulo{
     width: 100%;
-    height: 40px;
+    height: 35px;
     background-color: #fff;
-    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #div_meio{
     width: 100%;
     height: 170px;
+    margin-top: 10px;
+    background-color: #af6f0d;
 }
-.imagens{
-    width: 100%;
-    height: 100%;
-}
+
 #meio p{
     width: 100%;
-    height: 100px;
-    background-color: #9ee0ff;
+    height: 110px;
+    background-color: #c0ebff;
     margin-top: 10px;
     font-size: 14px;
-    padding: 5px;
-    text-align: left;
-    color: #000;
-    box-sizing: border-box;
+    
 }
 #container_caixas{
     width: 100%;
-    height: 140px;
-    margin-top: 10px;
+    height: 110px;
+    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -110,24 +83,13 @@ main{
 }
 .caixa{
     width: 30%;
-    height: 130px;
-}
-#caixa1{
-    background-image: url("../assets/paisagem1.jpg");
-    background-size: cover;
-
-}
-#caixa2{
-    background-image: url("../assets/paisagem2.jpg");
-    background-size: cover;
-}
-#caixa3{
-    background-image: url("../assets/paisagem3.jpg");
-    background-size: cover;
+    height: 95px;
+    background-color: #6b6b6b;
 }
 aside{
     width: 25%;
     height: 480px;
+    background-color: rgb(227, 40, 252);
 }
 footer{
     width: 100%;
@@ -138,9 +100,6 @@ footer{
     align-items: center;
     justify-content: center;
 }
-footer h3{
-    font-weight: 500;
-}
 
 /*tamanho celular*/
 @media only screen and (max-width: 480px){
@@ -148,19 +107,8 @@ footer h3{
         width: 98%;
     }
     
-    #menu_superior{
-        height: auto;
-        flex-direction: column;
-        background-color: transparent;
-    }
-    #menu_superior a{
-        width: 100%;
-        background-color: #009;
-        margin-top: 3px;
-
-    }
    .meio_cabecalho_titulo{
-        height: 10px;
+        height: 30px;
         background-color: #fff;
         color: #000;
     }   
@@ -172,7 +120,7 @@ footer h3{
     }
     .caixa{
         width: 100%;
-        height: 140px;
+        height: 120px;
         margin: 5px;
     }
     #container_caixas{
@@ -196,10 +144,6 @@ footer h3{
         #menu_superior{
             height: 80px;
             flex-wrap: wrap; /* exibe uma quebra de linha se necessario*/
-        }
-        #menu_superior a{
-            width: 33.1%;
-            color: #ff0;
         }
         #menu_lateral, aside{
             display: none;

@@ -1,8 +1,7 @@
 import Styles from './css/Header.module.css'
 import ViagensLogo from '../assets/imagens/viagens.jpg' 
 import Lupa from '../assets/imagens/lupa.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom'
 
 
 
@@ -11,11 +10,11 @@ export default function Header() {
         <header className={Styles.cabecalho}>
             <img src={ViagensLogo} alt="Logo da Travel" className={Styles.cabecalho_logo}/>
             <nav className={Styles.cabecalho_conteudo}>
-                <a href="">Home</a>
-                <a href="">GrandCanyon</a>
-                <a href="">Suécia</a>
-                <a href="">Muralhas da China</a>
-                <a href="">Aruba</a>
+                <Link to='/'>Home</Link>
+                <Link to='/GrandCanyon'>Grand Canyon</Link>
+                <Link to='/Suecia'>Suécia</Link>
+                <Link to='/MuralhaDaChina'>Muralha da China</Link>
+                <Link to='/Aruba'>Aruba</Link>
             </nav>
             <div className={Styles.busca}>
                 <input type="search" />

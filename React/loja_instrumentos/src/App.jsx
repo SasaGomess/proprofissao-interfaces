@@ -1,6 +1,5 @@
 import './App.css'
 import Cabecalho from './components/Cabecalho/Cabecalho'
-// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Hero from './components/Hero/Hero'
 import Produtos from './components/Produtos/Produtos'
 import Endereco from './components/Endereco/Endereco'
@@ -11,12 +10,12 @@ function App() {
   return (
     <>
     <Cabecalho/>
-      <main className='principal'>
+      <section className='principal'>
         <Hero/>
         <Produtos/>
         <Endereco/>
         <Contato/> 
-      </main>
+      </section>
       <Rodape/>
     </>
   )

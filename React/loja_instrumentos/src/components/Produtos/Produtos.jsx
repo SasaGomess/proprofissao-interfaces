@@ -3,7 +3,7 @@ import Produto from "./Produto"
 
 export default function Produtos() {
     return (
-        <section className={Styles.fundo_produtos}>
+        <section className={Styles.fundo_produtos} id="produtos">
             <Produto/>
             <Produto />
             <Produto />

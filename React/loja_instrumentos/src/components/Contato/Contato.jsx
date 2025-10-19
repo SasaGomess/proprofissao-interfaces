@@ -5,7 +5,7 @@ import Face from "../../assets/imagens_atividade_violão/imagens/face.png"
 
 export default function Contato() {
   return (
-    <section className={Styles.fundo_contato}>
+    <section className={Styles.fundo_contato} id="contato">
       <form>
         <label for="name">Entre com o seu nome:</label>
         <input

@@ -6,6 +6,4 @@ Os arquivos vão estar separados por pastas onde irá conter cada exercício pro
 - **Lógica de programação com Javascript** 💙
 - **CSS** 💙
 - **HTML** 💙
-
-### Aprendendo 🌟
-- **React**
+- **React** 💙

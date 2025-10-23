@@ -8,13 +8,14 @@
 <body>
     <script>
         let ipi = parseInt(prompt("Informe a porcentagem de IPI"));
-        let calculoQuantidadeValor;
+        let calculoQuantidadeValor = 0;
+
         for (let index = 0; index < 2; index++) {
             let codProduto = parseInt(prompt(`Informe o cod do ${index + 1}° produto `));
-            let unididade = parseInt(prompt(`Informe o valor unitario da peça ${index + 1}`));
-            let qtd = parseInt(prompt("Informe a porcentagem de IPI"));
+            let unidade = parseInt(prompt(`Informe o valor unitario da peça ${index + 1}`));
+            let qtd = parseInt(prompt(`Informe a quantidade da ${index + 1}° peça`));
             
-            calculoQuantidadeValor += unididade * qtd;
+            calculoQuantidadeValor += unidade * qtd;
         }
         let calculoTotal = calculoQuantidadeValor * (ipi/100 + 1);
 

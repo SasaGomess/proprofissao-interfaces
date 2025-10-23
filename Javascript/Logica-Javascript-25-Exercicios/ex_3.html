@@ -11,18 +11,19 @@
         let credito;
         let valorCredito;
 
-        if(saldoMedio >= 500 && saldoMedio <= 1000){
+        if(saldoMedio <= 500){
+            valorCredito = 0;
+        }else if(saldoMedio <= 1000){
             credito = 0.30;
             valorCredito = credito * saldoMedio;
-        }else if(saldoMedio >= 1001 && saldoMedio <= 3000){
+        }else if(saldoMedio <= 3000){
             credito = 0.40;
             valorCredito = credito * saldoMedio;
-        }else if(saldoMedio >= 3001){
+        }else if(saldoMedio > 3000){
             credito = 0.50;
             valorCredito = credito * saldoMedio;
-        }else{
-            valorCredito = 0;
         }
+        2002005055555555555555555555555555555555
         document.writeln(`O valor do saldo médio é: ${saldoMedio} e valor de crédito é ${valorCredito.toFixed(2)}`);
     </script>
 </body>

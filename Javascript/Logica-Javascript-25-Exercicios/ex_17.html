@@ -7,15 +7,15 @@
 </head>
 <body>
     <script>
-        let maiorIdade;
+        let maiorIdade = 0;
 
         for (let index = 0; index < 20; index++) {
            let idadeUsuario = parseInt(prompt(`Digite a ${index + 1}° idade`));
            if(idadeUsuario >= 18){
-            maiorIdade++;
+                maiorIdade++;
            }
         }
-        document.writeln(`Maiores de idade ${maiorIdade}`)
+        document.writeln(`Quantidade de maiores de idade ${maiorIdade}`)
 
     </script>
 </body>

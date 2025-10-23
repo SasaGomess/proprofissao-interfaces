@@ -37,7 +37,7 @@
                     <td> 2 - Sorvete diet</td>
                     <td> 110 cal</td>
                     <td> 2 - Suco de laranja </td>
-                    <td> 60 cal</td>
+                    <td> 70 cal</td>
                 </tr>
                 <tr>
                     <td> 3 - Frango</td>
@@ -45,7 +45,7 @@
                     <td> 3 - Mouse diet </td>
                     <td> 170 cal</td>
                     <td> 3 - Suco de melão </td>
-                    <td> 70 cal</td>
+                    <td> 100 cal</td>
                 </tr>
                 <tr>
                     <td> 4 - Carne</td>
@@ -53,16 +53,19 @@
                     <td> 4 - Mouse chocolate </td>
                     <td> 200 cal</td>
                     <td> 4 - Refrigerante diet </td>
-                    <td> 120 cal</td>
+                    <td> 65 cal</td>
                 </tr>
             
         </tbody>
     </table>
 
+    <button onclick="calculaCalorias()">Calcular total Calorias</button>
+
     <script>
-        //  let prato = parseInt(prompt("Escolha um prato de 1 a 4"));
-        // let sobremesa = parseInt(prompt("Escolha uma sobremesa de 1 a 4"));
-        // let bebida = parseInt(prompt("Escolha uma bebida de 1 a 4"));
+        function calculaCalorias() {
+             let prato = parseInt(prompt("Escolha um prato de 1 a 4"));
+            let sobremesa = parseInt(prompt("Escolha uma sobremesa de 1 a 4"));
+            let bebida = parseInt(prompt("Escolha uma bebida de 1 a 4"));
 
         let calorias = 0;
 
@@ -118,6 +121,8 @@
         }
 
         document.writeln(`O total de calorias consumidas com a refeição escolhida foi: ${calorias} CAL`)
+        }
+        
     </script>
 </body>
 

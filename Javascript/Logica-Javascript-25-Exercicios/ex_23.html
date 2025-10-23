@@ -12,11 +12,12 @@
         let qtdEntre101e200 = 0;
         let qtdMaior200 = 0;
 
-        for (let index = 0; index < array.length; index++) {
+        for (let index = 0; index < 20; index++) {
             n = parseInt(prompt(`Digite o ${index + 1}° número`));
+
             if(n >= 0 && n <= 100){
                 qtdEntre0e100++;
-            }else if(n >= 101 && n <= 200){
+            }else if(n <= 200){
                 qtdEntre101e200++
             }else if(n > 200){
                 qtdMaior200++;

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crie um programa que leia o nome e a idade de várias pessoas até que o nome "fim" seja informado. Ao final, exiba a média das idades.</title>
+</head>
+<body>
+    <script>
+        let resp = "sim";
+        let media = 0;
+        let soma = 0;
+        
+        let vezes = 0;
+        let n = 1;
+        
+        
+       for (let index = 0; index < n; index++) {
+            let nome = prompt("Digite o seu nome");
+            let idade = parseInt(prompt("Digite sua idade"));
+            soma += idade;
+            n++;
+            resp = prompt("Deseja continuar? Digite 'sim' ou 'fim'");
+            
+            if(resp === "fim"){
+                break;
+            } 
+       }
+
+        media = soma / n;
+
+        document.write(`A media das idades é ${media.toFixed(2)}`);
+       
+    </script>
+</body>
+</html>

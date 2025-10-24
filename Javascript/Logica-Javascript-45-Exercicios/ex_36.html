@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crie um programa que leia um número inteiro positivo e exiba todos os divisores desse número.</title>
+</head>
+<body>
+    <script>
+        let n =  parseInt(prompt(`Digite um número`));
+        for (let index = 1; index < n; index++) {
+            if(n % index == 0){
+                document.writeln(`Valor do divisor ${index} de ${n} <br>`);
+            }
+        }
+        
+    </script>
+</body>
+</html>

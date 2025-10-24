@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça um programa que leia 5 números inteiros usando o loop "do-while" e exiba a média aritmética dos valores lidos.</title>
+</head>
+<body>
+    <script>
+        let n = 1;
+        let soma = 0;
+        let mediaAritimetica = 0;
+        
+        do{
+            n++;
+            let valor = parseInt(prompt("Digite um numero inteiro"));
+            soma += valor;
+        }while(n < 5)
+
+        mediaAritimetica = soma / 5;
+
+        document.write(`A media aritmética dos valores é ${mediaAritimetica}`);
+    </script>
+</body>
+</html>

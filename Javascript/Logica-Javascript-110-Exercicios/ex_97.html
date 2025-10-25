@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escreva um programa que leia uma matriz 2x2 de números inteiros e calcule a soma de todos os elementos.</title>
+</head>
+<body>
+    <script>
+        let matriz = [[],[]];
+        let soma = 0;
+
+         for (let index = 0; index < 2; index++) {
+            for (let j = 0; j < 2; j++) {
+                matriz[index][j] = parseInt(prompt("Digite um numero"));
+                soma += matriz[index][j];
+            } 
+        }
+        document.writeln(`A soma dos valores da matriz 2 x 2 é ${soma}`)
+    </script>
+</body>
+</html>

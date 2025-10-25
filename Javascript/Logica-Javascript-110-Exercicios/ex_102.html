@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Faça um programa que leia duas matrizes 2x2 de números inteiros e exiba o
+      produto entre elas.
+    </title>
+  </head>
+  <body>
+    <script>
+      let matriz1 = [[], []];
+      let matriz2 = [[], []];
+      let soma1 = 0;
+      let soma2 = 0;
+      let produto = 0;
+
+      for (let index = 0; index < 2; index++) {
+        for (let j = 0; j < 2; j++) {
+          matriz1[index][j] = parseInt(prompt("Digite um numero"));
+          soma1 += matriz1[index][j];
+        }
+      }
+
+      for (let index = 0; index < 2; index++) {
+        for (let j = 0; j < 2; j++) {
+          matriz2[index][j] = parseInt(prompt("Digite um numero"));
+          soma2 += matriz2[index][j];
+        }
+      }
+
+      produto = soma1 * soma2;
+
+      document.writeln(`O valor do produto é ${produto}`);
+
+    </script>
+  </body>
+</html>

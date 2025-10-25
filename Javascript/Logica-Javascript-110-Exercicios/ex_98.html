@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Crie um programa que leia uma matriz 3x3 de números inteiros e exiba a
+      soma dos elementos da diagonal principal.
+    </title>
+  </head>
+  <body>
+    <script>
+      let matriz = [[], [], []];
+      let somaDiagonal = 0;
+
+      for (let index = 0; index < 3; index++) {
+        for (let j = 0; j < 3; j++) {
+          matriz[index][j] = parseInt(prompt("Digite um numero"));
+        }
+      }
+      for (let index = 0; index < 3; index++) {
+        somaDiagonal += matriz[index][index];
+      }
+
+      document.write(`Soma dos valores da diagonal principal é ${somaDiagonal}`)
+    </script>
+  </body>
+</html>

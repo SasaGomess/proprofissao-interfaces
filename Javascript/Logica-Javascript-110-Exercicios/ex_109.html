@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Escreva um programa que leia uma matriz 3x3 de números inteiros e
+      verifique se ela é uma matriz identidade.
+    </title>
+  </head>
+  <body>
+    <script>
+      let matriz = [[], [], []];
+      let identidadeSoma = [];
+      let zeroSoma = [];
+      let identidade = false;
+
+      for (let index = 0; index < 3; index++) {
+        for (let j = 0; j < 3; j++) {
+          matriz[index][j] = parseInt(prompt("Digite um numero"));
+        }
+      }
+      for (let index = 0; index < 3; index++) {
+        identidadeSoma += matriz[index][index];
+      }
+
+    for (let index = 0; index < 3; index++) {
+        for (let j = 0; j < 3; j++) {
+            if(j != index){
+                zeroSoma += matriz[index][j];
+            }
+          
+        }
+      }
+    if(identidadeSoma == 3 && zeroSoma == 0){
+        identidade = true;
+      }
+
+      if(identidade){
+        document.writeln(`É uma matriz identidade`);
+      }else{
+        document.writeln(`Não é uma matriz identidade`);
+      }
+    </script>
+  </body>
+</html>

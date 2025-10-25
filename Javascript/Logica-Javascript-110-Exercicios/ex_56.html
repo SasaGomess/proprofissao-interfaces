@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crie um programa que leia um número inteiro positivo e exiba todos os divisores desse número usando o loop "do-while".</title>
+</head>
+<body>
+    <script>
+        let n = parseInt(prompt("Digite um número"));
+        i = 1;
+
+        if(n <= 0){
+            document.writeln("O valor é negativo tente novamente em outro momento ")
+        }
+
+        do{
+            if(n % i == 0){
+                document.writeln(`O valor ${i} é divisor de ${n} <br>`)
+            }
+            i++;
+        }while (i < n);
+
+
+    </script>
+</body>
+</html>

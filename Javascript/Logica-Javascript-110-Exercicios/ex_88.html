@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escreva um programa que leia 5 números inteiros e calcule a média dos valores pares e a média dos valores ímpares.</title>
+</head>
+<body>
+    <script>
+        let numeros = [];
+        let somaPares = 0;
+        let somaImpares = 0;
+        let mediaPares;
+        let mediaImpares;
+
+        for (let index = 0; index < 5; index++) {
+            numeros[index] = parseInt(prompt("Digite um numero"));
+
+            if(numeros[index] % 2 == 0){
+                somaPares += numeros[index];
+            }else{
+                somaImpares += numeros[index];
+            }
+        }
+        mediaPares = somaPares / 5;
+        mediaImpares = somaImpares / 5;
+
+
+        document.writeln(mediaPares);
+        document.writeln(mediaImpares);
+    </script>
+</body>
+</html>

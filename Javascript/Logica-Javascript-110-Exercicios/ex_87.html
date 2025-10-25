@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça um programa que leia 10 números inteiros e exiba quantos deles são positivos.</title>
+</head>
+<body>
+    <script>
+        let numeros = [];
+        let qtdPositivos = 0;
+
+        for (let index = 0; index < 10; index++) {
+            numeros[index] = parseInt(prompt("Digite um numero"));
+
+            if(numeros[index] >= 0){
+                qtdPositivos++;
+            }
+        }
+
+        document.writeln(qtdPositivos);
+    
+    </script>
+</body>
+</html>

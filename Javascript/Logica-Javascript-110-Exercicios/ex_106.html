@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escreva um programa que leia duas matrizes 2x2 de números inteiros e verifique se elas são iguais.</title>
+</head>
+<body>
+    <script>
+      let matriz1 = [[], []];
+      let matriz2 = [[], []];
+      let iguais; 
+
+
+      for (let index = 0; index < 2; index++) {
+        for (let j = 0; j < 2; j++) {
+          matriz1[index][j] = parseInt(prompt("Digite um numero"));
+          
+        }
+      }
+
+      for (let index = 0; index < 2; index++) {
+        for (let j = 0; j < 2; j++) {
+          matriz2[index][j] = parseInt(prompt("Digite um numero"));
+        }
+    }
+
+    for (let index = 0; index < 2; index++) {
+        for (let j = 0; j < 2; j++) {
+          if(matriz2[index][j] != matriz1[index][j]){
+            iguais = false;
+            break;
+          };          
+        }
+    }
+
+    if(iguais){
+        document.writeln("As matrizes são iguais");
+    }else{
+        document.writeln("As matrizes não são iguais")
+    }
+    </script>
+</body>
+</html>

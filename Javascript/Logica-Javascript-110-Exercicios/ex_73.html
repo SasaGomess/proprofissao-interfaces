@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escreva um programa que leia um número inteiro e exiba a sequência de Fibonacci até o número lido.</title>
+</head>
+<body>
+    <script>
+       let n = parseInt(prompt("Insira um valor limite para a sequencia de fibonnaci"));
+        
+
+        let n1 = 0;
+        let n2 = 1;
+        let aux;
+
+        for (let index = 3; index < n; index++) {
+          
+            if(n1 == 0){
+                document.writeln(n1);
+                document.writeln(n2);
+            }
+            
+            aux = n1 + n2;
+            n1 = n2;
+            n2 = aux;
+            document.writeln(n2);
+           
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Faça um programa que leia uma matriz 4x4 de números inteiros e exiba o
+      maior valor presente em cada linha.
+    </title>
+  </head>
+  <body>
+    <script>
+      let matriz = [[], [], [], []];
+      let maiorL = 0;
+
+
+      for (let index = 0; index < 4; index++) {
+        for (let j = 0; j < 4; j++) {
+          matriz[index][j] = parseInt(prompt("Digite um numero"));
+        }
+      }
+
+      for (let index = 0; index < 4; index++) {
+        for (let j = 0; j < 4; j++) {
+          if(maiorL < matriz[index][j] || maiorL == 0){
+            maiorL = matriz[index][j];
+          }
+        }
+        document.writeln(`O maior valor da linha ${index} é ${maiorL} <br>`);
+        maiorL = 0;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crie um programa que leia uma matriz 3x3 de números inteiros e exiba o produto dos elementos da diagonal secundária.</title>
+</head>
+<body>
+    <script>
+      let matriz = [[], [], []];
+      let produtoDiagonalS = 1;
+
+      for (let index = 0; index < 3; index++) {
+        for (let j = 0; j < 3; j++) {
+          matriz[index][j] = parseInt(prompt("Digite um numero"));
+        }
+      }
+      for (let index = 0; index < 3; index++) {
+        
+        produtoDiagonalS *= matriz[index][2 - index];
+    
+      }
+
+      document.write(`O produto dos valores da diagonal principal é ${produtoDiagonalS}`)
+    </script>
+</body>
+</html>

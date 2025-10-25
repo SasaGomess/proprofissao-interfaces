@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escreva um programa que leia 5 números inteiros e exiba o maior e o menor valor digitado.</title>
+</head>
+<body>
+    <script>
+        let numeros = [];
+
+        for (let index = 0; index < 5; index++) {
+            numeros[index] = parseInt(prompt("Digite um numero"));
+        }
+
+        numeros.sort();
+
+        document.writeln(`O menor valor é ${numeros[0]} <br>`);
+        document.writeln(`O maior valor é ${numeros[(numeros.length -1)]} <br>`);
+
+    </script>
+</body>
+</html>

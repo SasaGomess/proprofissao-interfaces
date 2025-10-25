@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crie um programa que leia 5 nomes e exiba-os em ordem alfabética.</title>
+</head>
+<body>
+    <h1></h1>
+    <script>
+        let nomes = [];
+
+        for (let index = 0; index < 5; index++) {
+            nomes[index] = prompt("Digite o seu nome");
+        }
+
+        nomes.sort();
+
+        document.querySelector('h1').innerHTML = "Exibindo nomes em ordem alfabética";
+
+        nomes.forEach(nome => {
+            document.writeln(nome + "<br>");
+        });
+
+    </script>
+</body>
+</html>

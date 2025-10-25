@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Faça um programa que leia uma matriz 4x4 de números inteiros e exiba a
+      soma dos elementos de cada coluna.
+    </title>
+  </head>
+  <body>
+    <script>
+      let matriz = [[], [], [], []];
+      let somaC1 = 0;
+      let somaC2 = 0;
+      let somaC3 = 0;
+      let somaC4 = 0;
+
+      for (let index = 0; index < 4; index++) {
+        for (let j = 0; j < 4; j++) {
+          matriz[index][j] = parseInt(prompt("Digite um numero"));
+        }
+      }
+
+      for (let index = 0; index < 4; index++) {
+        for (let j = 0; j < 1; j++) {
+          somaC1 += matriz[index][j];
+        }
+      }
+
+      for (let index = 0; index < 4; index++) {
+        for (let j = 0; j < 2; j++) {
+            if(j == 1){
+                somaC2 += matriz[index][j];
+            }
+        }
+      }
+      for (let index = 0; index < 4; index++) {
+        for (let j = 0; j < 4; j++) {
+
+            if(j == 2){
+                somaC3 += matriz[index][j];
+            }
+        }
+      }
+
+      for (let index = 0; index < 4; index++) {
+        for (let j = 0; j < 4; j++) {
+
+            if(j == 3){
+                somaC4 += matriz[index][j];
+            }
+        }
+      }
+
+      document.writeln(`A soma dos elementos da coluna 0 é ${somaC1} <br>`);
+      document.writeln(`A soma dos elementos da coluna 1 é ${somaC2} <br>`);
+      document.writeln(`A soma dos elementos da coluna 2 é ${somaC3} <br>`);
+      document.writeln(`A soma dos elementos da coluna 3 é ${somaC4} <br>`);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça um programa que leia 5 números inteiros e verifique se algum deles é igual a zero.</title>
+</head>
+<body>
+    <script>
+        let numeros = [];
+
+         for (let index = 0; index < 5; index++) {
+            numeros[index] = parseInt(prompt("Digite um numero"));
+
+            if(numeros[index] == 0){
+                document.writeln(`O ${(index + 1)}° numero lido é igual a zero <br>`);
+            }
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Crie um programa que leia uma matriz 4x4 de números inteiros e exiba a
+      média aritmética dos elementos.
+    </title>
+  </head>
+  <body>
+    <script>
+      let matriz = [[], [], [], []];
+      let somaElementos = 0;
+      let mediaElementos;
+
+      for (let index = 0; index < 4; index++) {
+        for (let j = 0; j < 4; j++) {
+          matriz[index][j] = parseInt(prompt("Digite um numero"));
+          somaElementos += matriz[index][j];
+        }
+      }
+      mediaElementos = somaElementos / 16;
+      document.writeln(`A media dos valores da matriz 4 x 4 é ${mediaElementos.toFixed(2)}`);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça um programa que leia duas matrizes 2x2 de números inteiros e exiba a soma das duas matrizes.</title>
+</head>
+<body>
+    <script>
+        let matriz1 = [[],[]];
+        let matriz2 = [[],[]];
+        let somaMatrizes = 0;
+
+         for (let index = 0; index < 2; index++) {
+            for (let j = 0; j < 2; j++) {
+                matriz1[index][j] = parseInt(prompt("Digite um numero"));
+                somaMatrizes += matriz1[index][j];
+            } 
+        }
+
+        for (let index = 0; index < 2; index++) {
+            for (let j = 0; j < 2; j++) {
+                matriz2[index][j] = parseInt(prompt("Digite um numero"));
+                somaMatrizes += matriz2[index][j];
+            } 
+        }
+
+        document.writeln(`A soma das duas matrizes de 2 x 2 é ${somaMatrizes}`)
+    </script>
+</body>
+</html>

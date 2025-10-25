@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crie um programa que leia 10 números inteiros e exiba a quantidade de números positivos e a quantidade de números negativos.</title>
+</head>
+<body>
+    <script>
+        let numeros = [];
+        let qtdPositivos = 0;
+        let qtdNegativos = 0;
+
+        for (let index = 0; index < 10; index++) {
+            numeros[index] = parseInt(prompt("Digite um numero"));
+
+            if(numeros[index] >= 0){
+                qtdPositivos++;
+            }else{
+                qtdNegativos++;
+            }
+        }
+
+        document.writeln("Quantidade n° positivos " + qtdPositivos + "<br>");
+        document.writeln("Quantidade n° negativos " + qtdNegativos + "<br>");
+    </script>
+</body>
+</html>

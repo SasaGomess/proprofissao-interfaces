@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Faça um programa que leia um número inteiro e exiba os seus dígitos
+      separadamente.
+    </title>
+  </head>
+  <body>
+    <script>
+      let n = parseInt(prompt("Digite um numero"));
+
+      let invertido = 0;
+
+      if (n < 0) {
+        document.writeln("Digite um numero positivo");
+      }
+
+      for (let index = 0; index < n; index++) {
+        let resto = n % 10;
+        invertido = invertido * 10 + resto;
+        n = Math.floor(n / 10);
+      }
+
+      for (let index = 0; index < invertido; index++) {
+        let digito = invertido % 10;
+        document.writeln(`${digito} <br>`);
+        invertido = Math.floor(invertido / 10);
+      }
+    </script>
+  </body>
+</html>

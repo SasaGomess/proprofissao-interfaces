@@ -1,0 +1,195 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../assets/imagens/Frame\ 2.png);
+  background-color: #141414;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  font-family: sans-serif;
+}
+#cabecalho {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 60px 20px 60px;
+
+  & .cabecalho_nav {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 45px;
+  }
+
+  & .cabecalho_usuario_infos {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  & .cabecalho_usuario_infos:hover {
+    cursor: pointer;
+  }
+}
+
+a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 560;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+#hero {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+
+  margin: 50px 60px 90px 60px;
+
+  gap: 22px;
+
+  & #hero_principal {
+    gap: 22px;
+    display: flex;
+    width: 600px;
+    flex-direction: column;
+
+    & .hero_apresentacao {
+      color: #fff;
+      font-weight: 580;
+      font-size: 25px;
+    }
+
+    & #hero_titulo {
+      height: 300px;
+      width: 100%;
+    }
+
+    & .hero_botoes {
+      width: fit-content;
+      display: flex;
+      gap: 15px;
+      height: 60px;
+
+      & button {
+        border-radius: 4px;
+        font-size: 19px;
+      }
+
+      & #assistir {
+        width: 200px;
+        color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        font-weight: 580;
+      }
+      & #assistir:hover {
+        cursor: pointer;
+        background-color: #e4e2e2;
+      }
+      & #info:hover {
+        background-color: hsla(0, 1%, 32%, 0.541);
+        cursor: pointer;
+      }
+      & #info {
+        width: 230px;
+        background-color: hsla(0, 0%, 43%, 0.541);
+        color: #fff;
+        font-weight: 580;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+      }
+    }
+  }
+}
+
+#cards {
+  width: 90%;
+  margin: 0 60px 90px 60px;
+  display: flex;
+  flex-direction: column;
+
+  & .cards_conteudo {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 60px 0 40px 0;
+
+    & .cards_blocos {
+      display: flex;
+      gap: 10px;
+
+      & img {
+        height: 160px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      & .assistidos {
+        height: 160px;
+        cursor: pointer;
+      }
+    }
+
+    & .cards_moovies {
+      display: flex;
+      gap: 10px;
+
+      & img {
+        height: 180px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 290px 20px 290px;
+  gap: 32px;
+
+
+  & .rodape_conteudo_principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+
+
+    & .rodape_links {
+      
+      display: flex;
+      flex-direction: column;
+        justify-content: center;
+      gap: 20px;
+     
+
+      align-items: self-start;
+      color: #fff;
+      
+
+      & p {
+        text-align: center;
+        font-size: 12px;
+      }
+    }
+  }
+}

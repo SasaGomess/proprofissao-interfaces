@@ -1,129 +1,163 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Página Web Netflix</title>
-    <link rel="stylesheet" href="style/style.css" type="text/css" />
-  </head>
-  <body>
-    <header id="cabecalho">
-      <nav class="cabecalho_nav">
-        <img src="assets/imagens/Logo.png" alt="Logo Netflix" />
-        <a href="#">Início</a>
-        <a href="#">Séries</a>
-        <a href="#">Filmes</a>
-        <a href="#">Jogos</a>
-        <a href="#">Bombando</a>
-        <a href="#">Minha Lista</a>
-        <a href="#">Navegar por Idiomas</a>
-      </nav>
-      <nav class="cabecalho_usuario_infos">
-        <img src="assets/imagens/Search.png" alt="Procurar" />
-        <a href="#">Infantil</a>
-        <img src="assets/imagens/Notification.png" alt="Notificacao" />
-        <img src="assets/imagens/SmallAvatar.png" alt="Perfil" />
-      </nav>
-    </header>
 
-    <section id="hero">
-      <div id="hero_principal">
-        <img id="hero_titulo" src="assets/imagens/Hero_infos.png" alt="Título da Série" />
-        <p class="hero_apresentacao">
-          Esta comédia romântica fofa sobre uma confeiteira introspectiva e um
-          herdeiro com fobia a germes tem direção de Sho Tsukikawa e produção de
-          Yong Film
-        </p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página Web Netflix</title>
+  <link rel="stylesheet" href="style/style.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
 
-        <div class="hero_botoes">
-          <button id="assistir">
-            <img src="assets/imagens/botao-play.png" alt="Play" />
-            Assistir
-          </button>
-          <button id="info">
-            <img src="assets/imagens/Info.png" alt="Informações" />
-            Mais Informações
-          </button>
-        </div>
+<body>
+  <header id="cabecalho">
+    <nav class="cabecalho_nav">
+      <img src="assets/imagens/Logo.png" alt="Logo Netflix" />
+      <a href="#">Início</a>
+      <a href="#">Séries</a>
+      <a href="#">Filmes</a>
+      <a href="#">Jogos</a>
+      <a href="#">Bombando</a>
+      <a href="#">Minha Lista</a>
+      <a href="#">Navegar por Idiomas</a>
+    </nav>
+    <nav class="cabecalho_usuario_infos">
+      <img src="assets/imagens/Search.png" alt="Procurar" />
+      <a href="#">Infantil</a>
+      <img src="assets/imagens/Notification.png" alt="Notificacao" />
+      <img src="assets/imagens/SmallAvatar.png" alt="Perfil" />
+    </nav>
+  </header>
 
+  <section id="hero">
+    <div id="hero_principal">
+      <img id="hero_titulo" src="assets/imagens/Hero_infos.png" alt="Título da Série" />
+      <p class="hero_apresentacao">
+        Esta comédia romântica fofa sobre uma confeiteira introspectiva e um
+        herdeiro com fobia a germes tem direção de Sho Tsukikawa e produção de
+        Yong Film
+      </p>
+
+      <div class="hero_botoes">
+        <button id="assistir">
+          <img src="assets/imagens/botao-play.png" alt="Play" />
+          Assistir
+        </button>
+        <button id="info">
+          <img src="assets/imagens/Info.png" alt="Informações" />
+          Mais Informações
+        </button>
       </div>
-      <div class="hero_avaliacao">
-        <img src="assets/imagens/replay.png" alt="">
-        <img src="assets/imagens/tv-14.png" alt="">
+
+    </div>
+    <div class="hero_avaliacao">
+      <img src="assets/imagens/replay.png" alt="">
+      <img src="assets/imagens/tv-14.png" alt="">
+    </div>
+  </section>
+
+
+  <section id="cards">
+    <div class="cards_conteudo swiper mySwiper">
+      <h3>Combinam com você</h3>
+      <div class="cards_blocos swiper-wrapper">
+        <img class="swiper-slide"
+          src="assets/imagens/AAAABa0Hp4Wz2BwGA2Y0h0eCYpXn9pxUPNCE1EZ-25UZaBQFKwiP9WyOCFm1LS55brb9goMR4KtiH-iQRCN1jatONS8K4hSNwzprpcM.png"
+          alt="">
+        <img class="swiper-slide" src="assets/imagens/scooby-doo.png" alt="">
+        <img class="swiper-slide"
+          src="assets/imagens/AAAABae5gKT1Bmz8bIRkk2FjnjgximTdVq0_wHMnq7dg-jVz_vG5I75lj3ih7r9sjtPWO6mxWJUhlIv8zaVrQo_400_rN1yjX00Zviy9UeyFs2ubE-ViVtMQ_9Ww4sH-_QA3J5ZJ.png"
+          alt="">
+        <img class="swiper-slide"
+          src="assets/imagens/AAAABaMBW3B3aRSABrxjAOPSFoC8bEVIOsGhFsSKc_DeJ1GHexXSJvbJ88VaOZwmhPdxAw18aJro8-f6RtD98Ez2bgTn-8-oiKnKXoZYSI2ZBuy7UaVUBHTP7su8HL2iVPPsDeYT.png"
+          alt="">
+        <img class="swiper-slide"
+          src="assets/imagens/AAAABbf_sEtW6GuaQcey4j8Zjy3WJJ4w_f257Sy2yGyz3T-we8LjQIKhVI-rRNxF4g8CiagI8s-bLUm7eWzqheo-9sMYVue-09TcaBwk86QVEqZ-FNM_ubcbMfZKXnzdEcUV0jFs.png"
+          alt="">
+        <img class="swiper-slide"
+          src="assets/imagens/AAAABaJJXEuwZIfc5HlqW7Wrffo_mSz6i-nx5QkZ2AqCBjJWlkw5A_IJ7ZYgE9YYeQDX75RJVwwWvnQBkRGgpI_LhVfewaMkuzfrThzX7iBEx76MInKQJnt7YAFVoPq_EfiHUgnG.png"
+          alt="">
+        <img src="assets/imagens/bonappetit.png" alt="">
+        <img class="swiper-slide" src="assets/imagens/scooby-doo.png" alt="">
       </div>
-    </section>
-    
-
-    <section id="cards">
-        <div class="cards_conteudo">
-            <h3>Combinam com você</h3>
-            <div class="cards_blocos">
-                <img src="assets/imagens/AAAABa0Hp4Wz2BwGA2Y0h0eCYpXn9pxUPNCE1EZ-25UZaBQFKwiP9WyOCFm1LS55brb9goMR4KtiH-iQRCN1jatONS8K4hSNwzprpcM.png" alt="">
-                <img src="assets/imagens/AAAABa1XrXvxVWZMwSAd5t-2jL9j5rZsurj051Wx2VwoeZL50STzibxLgKjox3mxVVpqGjd1is_xHeKOIQLbj-jwsvoqKNdQK1Xc3gc-1.png" alt="">
-                <img src="assets/imagens/AAAABae5gKT1Bmz8bIRkk2FjnjgximTdVq0_wHMnq7dg-jVz_vG5I75lj3ih7r9sjtPWO6mxWJUhlIv8zaVrQo_400_rN1yjX00Zviy9UeyFs2ubE-ViVtMQ_9Ww4sH-_QA3J5ZJ.png" alt="">
-                <img src="assets/imagens/AAAABaMBW3B3aRSABrxjAOPSFoC8bEVIOsGhFsSKc_DeJ1GHexXSJvbJ88VaOZwmhPdxAw18aJro8-f6RtD98Ez2bgTn-8-oiKnKXoZYSI2ZBuy7UaVUBHTP7su8HL2iVPPsDeYT.png" alt="">
-                <img src="assets/imagens/AAAABbf_sEtW6GuaQcey4j8Zjy3WJJ4w_f257Sy2yGyz3T-we8LjQIKhVI-rRNxF4g8CiagI8s-bLUm7eWzqheo-9sMYVue-09TcaBwk86QVEqZ-FNM_ubcbMfZKXnzdEcUV0jFs.png" alt="">
-                <img src="assets/imagens/AAAABaJJXEuwZIfc5HlqW7Wrffo_mSz6i-nx5QkZ2AqCBjJWlkw5A_IJ7ZYgE9YYeQDX75RJVwwWvnQBkRGgpI_LhVfewaMkuzfrThzX7iBEx76MInKQJnt7YAFVoPq_EfiHUgnG.png" alt="">
-                <img src="assets/imagens/bonappetit.png" alt="">
-            </div>
-        </div>
-            <div class="cards_conteudo">
-            <h3>Continuar assistindo como Sabrina</h3>
-            <div  class="cards_blocos">
-                <img class="assistidos" src="assets/imagens/Default-1.png" alt="">
-                <img class="assistidos" src="assets/imagens/flower.png" alt="">
-                <img class="assistidos" src="assets/imagens/bonapetit.png" alt="">
-                <img class="assistidos" src="assets/imagens/Default.png" alt="">
-                <img class="assistidos" src="assets/imagens/Default-3.png" alt="">
-                <img class="assistidos" src="assets/imagens/Default-2.png" alt="">
-            </div>
-            </div>
-            <div class="cards_conteudo">
-            <h3>Brasil: top 10 filmes hoje</h3>
-            <div class="cards_moovies">
-                <img src="assets/imagens/MovieCard-1.png" alt="">
-                <img src="assets/imagens/MovieCard-2.png" alt="">
-                <img src="assets/imagens/MovieCard-3.png" alt="">
-                <img src="assets/imagens/MovieCard-4.png" alt="">
-                <img src="assets/imagens/MovieCard-5.png" alt="">
-                <img src="assets/imagens/MovieCard.png" alt="">
-            </div>
-            </div>
-            <div class="cards_conteudo">
-            <h3>Porque você viu Dexter</h3>
-            <div class="cards_blocos">
-                <img src="assets/imagens/AAAABazo_J-VC2SSMOv7_LXMcUMGYl7NoxTUmR1dNuo32nUKG1yMS5ojqgVTOOb-hm4qVhsAhs_QYq2vzV92m8AZd8bQ219jmZwlErA.png" alt="">
-                
-                <img src="assets/imagens/AAAABa1XrXvxVWZMwSAd5t-2jL9j5rZsurj051Wx2VwoeZL50STzibxLgKjox3mxVVpqGjd1is_xHeKOIQLbj-jwsvoqKNdQK1Xc3gc.png" alt="">
-                <img src="assets/imagens/AAAABaIcwGQcAWrJrvZLpVp4KCCut9E0HoQE81441m5Lqldtz92WdVO3SjiQSS_MIgbovftuQwsegOXpsAlnkeK1snTPiVTEap-fZ4Oqn0x9MFnQndN5d6xeZyiJiNUgjcGaGdCK.png" alt="">
-                <img src="assets/imagens/breakingbad.png" alt="">
-
-                <img src="assets/imagens/you.png" alt="">
-            
-                <img src="assets/imagens/HorizontalHomePage-4.png" alt="">
-                
-            </div>
-            </div>
-        </div>
-    </section>
-    <footer>
-      <img src="assets/imagens/SocialMediaIcons.png" alt="Media social">
-      <div class="rodape_conteudo_principal">
-        <div class="rodape_links">
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <div class="cards_conteudo swiper mySwiper">
+      <h3>Continuar assistindo como Sabrina</h3>
+      <div class="cards_blocos swiper-wrapper">
+        <img class="assistidos swiper-slide" src="assets/imagens/Default-1.png" alt="">
+        <img class="assistidos swiper-slide" src="assets/imagens/flower.png" alt="">
+        <img class="assistidos swiper-slide" src="assets/imagens/bonapetit.png" alt="">
+        <img class="assistidos swiper-slide" src="assets/imagens/Default.png" alt="">
+        <img class="assistidos swiper-slide" src="assets/imagens/Default-3.png" alt="">
+        <img class="assistidos swiper-slide" src="assets/imagens/Default-2.png" alt="">
+        <img class="assistidos swiper-slide" src="assets/imagens/continue_7.png" alt="">
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <div class="cards_conteudo swiper mySwiper">
+      <h3>Brasil: top 10 filmes hoje</h3>
+      <div class="cards_moovies swiper-wrapper">
+        <img class="swiper-slide" src="assets/imagens/MovieCard.png" alt="">
+        <img class="swiper-slide" src="assets/imagens/MovieCard-1.png" alt="">
+        <img class="swiper-slide" src="assets/imagens/MovieCard-2.png" alt="">
+        <img class="swiper-slide" src="assets/imagens/MovieCard-3.png" alt="">
+        <img class="swiper-slide" src="assets/imagens/MovieCard-4.png" alt="">
+        <img class="swiper-slide" src="assets/imagens/MovieCard-5.png" alt="">
+         <img class="swiper-slide" src="assets/imagens/MovieCard-7.png" alt="">
+         <img class="swiper-slide" src="assets/imagens/Movie-8.png" alt="">
+         <img class="swiper-slide" src="assets/imagens/Movie-9.png" alt="">
+         <img class="swiper-slide" src="assets/imagens/Movie-10.png" alt="">
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <div class="cards_conteudo swiper mySwiper">
+      <h3>Porque você viu Dexter</h3>
+      <div class="cards_blocos swiper-wrapper">
+        <img class="swiper-slide"
+          src="assets/imagens/AAAABazo_J-VC2SSMOv7_LXMcUMGYl7NoxTUmR1dNuo32nUKG1yMS5ojqgVTOOb-hm4qVhsAhs_QYq2vzV92m8AZd8bQ219jmZwlErA.png"
+          alt="">
+        <img class="swiper-slide"
+          src="assets/imagens/AAAABa1XrXvxVWZMwSAd5t-2jL9j5rZsurj051Wx2VwoeZL50STzibxLgKjox3mxVVpqGjd1is_xHeKOIQLbj-jwsvoqKNdQK1Xc3gc.png"
+          alt="">
+        <img class="swiper-slide"
+          src="assets/imagens/AAAABaIcwGQcAWrJrvZLpVp4KCCut9E0HoQE81441m5Lqldtz92WdVO3SjiQSS_MIgbovftuQwsegOXpsAlnkeK1snTPiVTEap-fZ4Oqn0x9MFnQndN5d6xeZyiJiNUgjcGaGdCK.png"
+          alt="">
+        <img class="swiper-slide" src="assets/imagens/payers.png" alt="">
+        <img class="swiper-slide" src="assets/imagens/breakingbad.png" alt="">
+        <img class="swiper-slide" src="assets/imagens/you.png" alt="">
+        <img class="swiper-slide" src="assets/imagens/HorizontalHomePage-4.png" alt="">
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    </div>
+  </section>
+  <footer>
+    <img src="assets/imagens/SocialMediaIcons.png" alt="Media social">
+    <div class="rodape_conteudo_principal">
+      <div class="rodape_links">
         <p>AudioDescrição</p>
         <p>Relações com investidores</p>
         <p>Avisos legais</p>
 
       </div>
 
-       <div class="rodape_links">
+      <div class="rodape_links">
         <p>Central de Ajuda</p>
         <p>Carreiras</p>
         <p>Preferências de cookies</p>
-   
+
       </div>
 
-       <div class="rodape_links">
+      <div class="rodape_links">
         <p>Cartão pré-pago</p>
         <p>Termos de Uso</p>
         <p>Informações corporativas</p>
@@ -136,9 +170,36 @@
         <p>Entre em contato</p>
       </div>
 
-      </div>
-      
-      <img src="assets/imagens/© 1997 - 2024 Netflix, Inc..png" alt="Copiright">
-    </footer>
-  </body>
+    </div>
+
+    <img src="assets/imagens/© 1997 - 2024 Netflix, Inc..png" alt="Copiright">
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 6,          // 👈 Mostra 5 slides por vez
+      spaceBetween: 15,          // Espaço entre os cards (px)
+      loop: true,                // Faz o carrossel rodar em loop
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {             // Responsividade
+        320: { slidesPerView: 1 },
+        480: { slidesPerView: 2 },
+        768: { slidesPerView: 3 },
+        1024: { slidesPerView: 6 }
+      }
+    });
+  </script>
+</body>
+
 </html>

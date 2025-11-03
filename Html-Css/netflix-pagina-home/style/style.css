@@ -13,6 +13,7 @@ body {
 
   font-family: sans-serif;
 }
+
 #cabecalho {
   width: 100%;
   display: flex;
@@ -94,14 +95,17 @@ a:hover {
         gap: 12px;
         font-weight: 580;
       }
+
       & #assistir:hover {
         cursor: pointer;
         background-color: #e4e2e2;
       }
+
       & #info:hover {
         background-color: hsla(0, 1%, 32%, 0.541);
         cursor: pointer;
       }
+
       & #info {
         width: 230px;
         background-color: hsla(0, 0%, 43%, 0.541);
@@ -131,13 +135,14 @@ a:hover {
 
     & .cards_blocos {
       display: flex;
-      gap: 10px;
+     
 
       & img {
         height: 160px;
         border-radius: 4px;
         cursor: pointer;
       }
+
       & .assistidos {
         height: 160px;
         cursor: pointer;
@@ -198,6 +203,7 @@ footer {
       gap: 0;
     }
   }
+
   a {
     font-size: 11px;
   }
@@ -228,10 +234,31 @@ footer {
         & #assistir {
           width: 120px;
         }
+
         & #info {
           width: 190px;
         }
       }
     }
   }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
